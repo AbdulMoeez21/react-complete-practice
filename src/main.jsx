@@ -4,7 +4,6 @@ import App from './App'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+<> <h1>Hello world!!</h1>
+<p> lorem lorem lorem lorem lorem </p></>
 )
