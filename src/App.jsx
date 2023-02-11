@@ -12,8 +12,9 @@ import Sdata from "./Sdata";
 function App() {
   return (
     <>
-    <h1>List of Top 5 netflix Series in 2022</h1>
-      <NetflixCards
+      <h1>List of Top 5 netflix Series in 2022</h1>
+      <div className="min">
+        {/* <NetflixCards
         imgsrc={Sdata[0].imgsrc}
         title={Sdata[0].title}
         link={Sdata[0].link}      />
@@ -26,8 +27,21 @@ function App() {
          imgsrc={Sdata[2].imgsrc}
         title={Sdata[2].title}
         link={Sdata[2].link}  
-      />
-      {/* <h1>Simple Calculator</h1>
+      /> */}
+
+        {Sdata.map((val)=> {
+          return (
+            <>
+              <NetflixCards
+                imgsrc={val.imgsrc}
+                title={val.title}
+                link={val.link}
+              />
+            </>
+          );
+        })}
+
+        {/* <h1>Simple Calculator</h1>
       <ul>
         <li>Subtraction{sub(40, 2)} </li>
         <li>Addition {add(30, 1)}</li>
@@ -36,6 +50,7 @@ function App() {
       </ul>
       <Challenges />
       <SimpleGreeting /> */}
+      </div>
     </>
   );
 }

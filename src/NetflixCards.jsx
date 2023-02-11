@@ -5,6 +5,7 @@ function NetflixCards(props){
 
     return (
         <>
+        <div className="min">
 <div className="cards">
 <div className="card">
     <img src={props.imgsrc} alt="pic" className="card_img" />
@@ -16,7 +17,7 @@ function NetflixCards(props){
         </a>
     </div>
 </div>
-
+</div>
 </div>
         </>
     )
