@@ -8,12 +8,15 @@ import add from "./SimpleCalc";
 import { sub, mult, div } from "./SimpleCalc";
 import NetflixCards from "./NetflixCards";
 import Sdata from "./Sdata";
+import SlotMachine from "./SlotMachine";
+
+
 
 function App() {
   return (
     <>
-      <h1>List of Top 5 netflix Series in 2022</h1>
-      <div className="min">
+      {/* <h1>List of Top 5 netflix Series in 2022</h1> */}
+      {/* <div className="min"> */}
         {/* <NetflixCards
         imgsrc={Sdata[0].imgsrc}
         title={Sdata[0].title}
@@ -28,18 +31,22 @@ function App() {
         title={Sdata[2].title}
         link={Sdata[2].link}  
       /> */}
-
-        {Sdata.map((val)=> {
+      {/* {Sdata.map((val) => {
           return (
             <>
               <NetflixCards
+                key={val.id}
                 imgsrc={val.imgsrc}
                 title={val.title}
                 link={val.link}
               />
             </>
           );
-        })}
+        })} */}
+<h1 className="heading_style">
+  Welcome to <span style={{fontWeight:"bold"}}>Slot Machine Game</span> { " "}
+</h1>
+       
 
         {/* <h1>Simple Calculator</h1>
       <ul>
@@ -50,7 +57,13 @@ function App() {
       </ul>
       <Challenges />
       <SimpleGreeting /> */}
+      {/* </div> */}
+      <div className="slotmachine">
+      <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
+      <SlotMachine x='👩' y='👩' z='👩' />
+      <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
       </div>
+      
     </>
   );
 }
