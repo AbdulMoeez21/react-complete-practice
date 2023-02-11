@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-
+import {sub,mult,div} from './SimpleCalc'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <> 
@@ -22,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 {/* <h1>{`My name is ${fname} ${mname} ${lname}`}</h1>
 <p>{`Today's Date is "${curr_date}"`}</p>
 <p>{`Today's Date is "${curr_time}"`}</p> */}
+
 <App/>
 
 </>
