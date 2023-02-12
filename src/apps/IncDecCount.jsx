@@ -1,8 +1,8 @@
 import React,{useState} from "react";
-import "./index.css";
+
 
 function IncDecCount(){
-    const state=useState();
+    
     const[count,setCount]=useState(0);
     const NumInc=()=>{
       setCount(count+1)

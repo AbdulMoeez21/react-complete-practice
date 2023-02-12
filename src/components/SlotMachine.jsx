@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+
 
 const SlotMachine=(props)=>{
     let x=props.x

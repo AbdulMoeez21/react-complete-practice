@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import {sub,mult,div} from './SimpleCalc'
+//import {sub,mult,div} from './SimpleCalc'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <> 

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react";
-import "./index.css";
+
 
 let curr_Date=new Date(2021,2,2,22);
 curr_Date=curr_Date.getHours();

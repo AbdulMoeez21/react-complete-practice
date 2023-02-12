@@ -1,81 +1,51 @@
-import React,{ useState } from "react";
-import reactLogo from "./assets/react.svg";
+import React, { useState } from "react";
 import "./App.css";
-import Challenges from "./Challenges.jsx";
-import SimpleGreeting from "./SimpleGreeting.jsx";
-import sname from "./ImpExp.jsx";
-import add from "./SimpleCalc";
-import { sub, mult, div } from "./SimpleCalc";
-import NetflixCards from "./NetflixCards";
-import Sdata from "./Sdata";
-import SlotMachine from "./SlotMachine";
-import IncDecCount from "./IncDecCount";
-import UpdateTime from "./UpdateTime";
-import SimpleForm from "./SimpleForm";
+import "./index.css";
+import SimpleGreeting from "./apps/SimpleGreeting.jsx";
+import sname from "./apps/ImpExp";
+import add from "./apps/SimpleCalc";
+import { sub, mult, div } from "./apps/SimpleCalc";
+import IncDecCount from "./apps/IncDecCount";
+import UpdateTime from "./apps/UpdateTime";
+import SimpleForm from "./apps/SimpleForm";
+import SlotMachineApp from "./apps/SlotMachineApp";
+import Netlfix from "./apps/Netlfix";
+import Calculator from "./apps/Calculator";
+import Challenges from "./apps/Challenges";
 
 function App() {
- 
- 
- 
-  
-  return (
-    <>
-    
-      {/* <h1>List of Top 5 netflix Series in 2022</h1> */}
-      {/* <div className="min"> */}
-        {/* <NetflixCards
-        imgsrc={Sdata[0].imgsrc}
-        title={Sdata[0].title}
-        link={Sdata[0].link}      />
-      <NetflixCards
-        imgsrc={Sdata[1].imgsrc}
-        title={Sdata[1].title}
-        link={Sdata[1].link}  
-      />
-      <NetflixCards
-         imgsrc={Sdata[2].imgsrc}
-        title={Sdata[2].title}
-        link={Sdata[2].link}  
-      /> */}
-      {/* {Sdata.map((val) => {
-          return (
-            <>
-              <NetflixCards
-                key={val.id}
-                imgsrc={val.imgsrc}
-                title={val.title}
-                link={val.link}
-              />
-            </>
-          );
-        })} */}
-{/* <h1 className="heading_style">
-  Welcome to <span style={{fontWeight:"bold"}}>Slot Machine Game</span> { " "}
-</h1> */}
-       
+  const [type, settype] = useState("netflix");
 
-        {/* <h1>Simple Calculator</h1>
-      <ul>
-        <li>Subtraction{sub(40, 2)} </li>
-        <li>Addition {add(30, 1)}</li>
-        <li>Multiplication {mult(40, 2)}</li>
-        <li>Division {div(30, 2)}</li>
-      </ul>
-      <Challenges />
-      <SimpleGreeting /> */}
-      {/* </div> */}
-      {/* <div className="slotmachine">
-      <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
-      <SlotMachine x='👩' y='👩' z='👩' />
-      <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
-      </div>*/}
-
-      {/* <IncDecCount />  */}
-     
-      {/* <UpdateTime /> */}
-      <SimpleForm />
-    </>
-  );
+  if (type == "netflix") {
+    return <Netlfix />;
+  }
+  else if (type == "incdeccount") {
+    return <IncDecCount />;
+  }
+  else if (type == "calculator") {
+    return <Calculator />;
+  }
+  if (type == "challenges") {
+    return <Challenges />;
+  }
+  else if (type == "SimpleCalc") {
+    return <SimpleCalc />;
+  }
+  if (type == "SimpleForm") {
+    return <SimpleForm />;
+  }
+  else if (type == "SimpleGreeting") {
+    return <SimpleGreeting />;
+  }
+  else if (type == "UpdateTime") {
+    return <UpdateTime />;
+  }
+  else if (type == "SlotMachine") {
+    return <SlotMachineApp />;
+  }
+  else if (type == "ImpExp") {
+    return <ImpExp />;
+  }
 }
 
 export default App;

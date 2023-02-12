@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'
+
 
  const fname="Rao"
  const mname="Abdul"

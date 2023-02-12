@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "./index.css";
+
 
 function UpdateTime(){
    let newTime=new Date().toLocaleTimeString()
