@@ -11,6 +11,7 @@ import Sdata from "./Sdata";
 import SlotMachine from "./SlotMachine";
 import IncDecCount from "./IncDecCount";
 import UpdateTime from "./UpdateTime";
+import SimpleForm from "./SimpleForm";
 
 function App() {
  
@@ -71,7 +72,8 @@ function App() {
 
       {/* <IncDecCount />  */}
      
-      <UpdateTime />
+      {/* <UpdateTime /> */}
+      <SimpleForm />
     </>
   );
 }
