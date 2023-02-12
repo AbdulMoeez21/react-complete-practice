@@ -21,6 +21,7 @@ const SlotMachine=(props)=>{
     }else{
       return (
         <>
+        
            <div className="slot_inner">
             <h1>
               {" "}

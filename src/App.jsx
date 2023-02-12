@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Challenges from "./Challenges.jsx";
@@ -9,12 +9,17 @@ import { sub, mult, div } from "./SimpleCalc";
 import NetflixCards from "./NetflixCards";
 import Sdata from "./Sdata";
 import SlotMachine from "./SlotMachine";
-
-
+import IncDecCount from "./IncDecCount";
+import UpdateTime from "./UpdateTime";
 
 function App() {
+ 
+ 
+ 
+  
   return (
     <>
+    
       {/* <h1>List of Top 5 netflix Series in 2022</h1> */}
       {/* <div className="min"> */}
         {/* <NetflixCards
@@ -43,9 +48,9 @@ function App() {
             </>
           );
         })} */}
-<h1 className="heading_style">
+{/* <h1 className="heading_style">
   Welcome to <span style={{fontWeight:"bold"}}>Slot Machine Game</span> { " "}
-</h1>
+</h1> */}
        
 
         {/* <h1>Simple Calculator</h1>
@@ -58,12 +63,15 @@ function App() {
       <Challenges />
       <SimpleGreeting /> */}
       {/* </div> */}
-      <div className="slotmachine">
+      {/* <div className="slotmachine">
       <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
       <SlotMachine x='👩' y='👩' z='👩' />
       <SlotMachine x='👩' y='👮‍♂️' z='👷‍♀️'/>
-      </div>
-      
+      </div>*/}
+
+      {/* <IncDecCount />  */}
+     
+      <UpdateTime />
     </>
   );
 }
