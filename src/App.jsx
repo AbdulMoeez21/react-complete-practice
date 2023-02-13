@@ -14,12 +14,12 @@ import Calculator from "./apps/Calculator";
 import Challenges from "./apps/Challenges";
 
 function App() {
-  const [type, settype] = useState("netflix");
+  const [type, settype] = useState("IncDecCount");
 
   if (type == "netflix") {
     return <Netlfix />;
   }
-  else if (type == "incdeccount") {
+  else if (type == "IncDecCount") {
     return <IncDecCount />;
   }
   else if (type == "calculator") {
@@ -46,6 +46,15 @@ function App() {
   else if (type == "ImpExp") {
     return <ImpExp />;
   }
+
+  // else if (type=="hello"){
+  //   return (
+  //     <>
+       
+   
+  //     </>
+  //   )
+  // }
 }
 
 export default App;
