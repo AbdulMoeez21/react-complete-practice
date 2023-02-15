@@ -5,16 +5,17 @@ import SimpleGreeting from "./apps/SimpleGreeting.jsx";
 import sname from "./apps/ImpExp";
 import add from "./apps/SimpleCalc";
 import { sub, mult, div } from "./apps/SimpleCalc";
-import IncDecCount from "./apps/IncDecCount";
+// import IncDecCount from "./apps/IncDecCount";
 import UpdateTime from "./apps/UpdateTime";
 import SimpleForm from "./apps/SimpleForm";
 import SlotMachineApp from "./apps/SlotMachineApp";
 import Netlfix from "./apps/Netlfix";
 import Calculator from "./apps/Calculator";
 import Challenges from "./apps/Challenges";
+import TodoList from "./components/TodoList";
 
 function App() {
-  const [type, settype] = useState("IncDecCount");
+  const [type, settype] = useState("TodoList");
 
   if (type == "netflix") {
     return <Netlfix />;
@@ -45,6 +46,9 @@ function App() {
   }
   else if (type == "ImpExp") {
     return <ImpExp />;
+  }
+  else if (type == "TodoList") {
+    return <TodoList />;
   }
 
   // else if (type=="hello"){
