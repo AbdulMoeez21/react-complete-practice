@@ -13,9 +13,10 @@ import Netlfix from "./apps/Netlfix";
 import Calculator from "./apps/Calculator";
 import Challenges from "./apps/Challenges";
 import TodoList from "./components/TodoList";
-
+import Accordion from "./apps/Accordion";
+import Accdata from "./data/Accdata";
 function App() {
-  const [type, settype] = useState("TodoList");
+  const [type, settype] = useState("Accordion");
 
   if (type == "netflix") {
     return <Netlfix />;
@@ -50,7 +51,9 @@ function App() {
   else if (type == "TodoList") {
     return <TodoList />;
   }
-
+else if (type=="Accordion"){
+  return <Accordion/>
+}
   // else if (type=="hello"){
   //   return (
   //     <>
