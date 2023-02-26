@@ -6,14 +6,16 @@ const NotesCards = (props) => {
         desc:"",
     })
     const inputEvent=(e)=>{
-        const value=e.target.value;
-        const name=e.target.name;
+        // const value=e.target.value;
+        // const name=e.target.name;
+        const {name,value}=e.target
         setNote((prevData)=>{
             return {
                 ...prevData,[name] :value,
             }
+
         })
-        console.log("clicked")
+        console.log(note)
     }
     const addEvent =()=>{
         props.passNote(note)

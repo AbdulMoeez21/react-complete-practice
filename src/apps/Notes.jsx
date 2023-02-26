@@ -3,8 +3,9 @@ import NotesCards from '../components/NotesCards'
 import ViewNotes from '../components/ViewNotes'
 
 
-const [addItem, setAddItem] = useState([])
+
 const Notes = (note) => {
+  const [addItem, setAddItem] = useState([])
     // alert("i'm clicked")
     setAddItem((prevData)=>{
         return [...prevData,note]
@@ -14,7 +15,15 @@ const Notes = (note) => {
   return (
     <div>
       <NotesCards passNote={Notes}/>
-      <ViewNotes />
+      {/* <ViewNotes /> */}
+      {addItem.map((val,index)=>{
+        return <ViewNotes 
+             key={index} 
+             id={index}
+              title={val.title}
+        desc={val.desc}
+        />
+      })}
     </div>
   )
 }
