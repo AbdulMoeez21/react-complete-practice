@@ -16,9 +16,10 @@ import TodoList from "./components/TodoList";
 import Accordion from "./apps/Accordion";
 import Notes from "./apps/Notes";
 import Covid from "./apps/Covid";
+import StateWiseCovid from "./apps/StateWiseCovid";
 
 function App() {
-  const [type, settype] = useState("Covid");
+  const [type, settype] = useState("StateWiseCovid");
 
   if (type == "netflix") {
     return <Netlfix />;
@@ -61,6 +62,9 @@ else if (type=="Notes"){
 }
 else if (type=="Covid"){
   return <Covid/>
+}
+else if (type=="StateWiseCovid"){
+  return <StateWiseCovid/>
 }
   // else if (type=="hello"){
   //   return (
