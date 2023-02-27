@@ -17,9 +17,11 @@ import Accordion from "./apps/Accordion";
 import Notes from "./apps/Notes";
 import Covid from "./apps/Covid";
 import StateWiseCovid from "./apps/StateWiseCovid";
+import Reactroute from "./apps/Reactroute";
+import RouteProvider from "./apps/RouteProvider";
 
 function App() {
-  const [type, settype] = useState("StateWiseCovid");
+  const [type, settype] = useState("RouteProvider");
 
   if (type == "netflix") {
     return <Netlfix />;
@@ -65,6 +67,12 @@ else if (type=="Covid"){
 }
 else if (type=="StateWiseCovid"){
   return <StateWiseCovid/>
+}
+else if (type=="Reactroute"){
+  return <Reactroute/>
+}
+else if (type=="RouteProvider"){
+  return <RouteProvider/>
 }
   // else if (type=="hello"){
   //   return (
