@@ -18,7 +18,8 @@ import Contact from "../pages/help/Contact";
 import NotFound from "../pages/NotFound";
 import CareerLayouts from "../layouts/CareerLayouts";
 import Careers from "../pages/careers/Careers";
-
+import Users from "../pages/Users";
+import UserLayouts from "../layouts/UserLayouts";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayouts />}>
@@ -29,17 +30,14 @@ const router = createBrowserRouter(
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
       </Route>
-<Route path='careers' element={<CareerLayouts/>}>
-    <Route index
-     element={<Careers/>} 
-     
-
-     />
-</Route>
-
-      <Route path="*" element={<NotFound/>}/>
+      <Route path="careers" element={<CareerLayouts />}>
+        <Route index element={<Careers />} />
+      </Route>
+      <Route path="/users" element={<UserLayouts />} />
+      <Route path="/users/:name" element={<Users />} />
+      
+      <Route path="*" element={<NotFound />} />
     </Route>
-   
   )
 );
 const RouteProvider = () => {
